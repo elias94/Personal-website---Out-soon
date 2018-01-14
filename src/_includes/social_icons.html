@@ -1,0 +1,7 @@
+<div class="social-icons">
+    {% for social in site.data.info.social %}
+        <a class="user-card__social-icon anim--fade" href="{{social.url}}" target="_blank" title="{{social.name}}">
+            {% include {{social.icon}} %}
+        </a>
+    {% endfor %}
+</div>

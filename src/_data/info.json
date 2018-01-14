@@ -1,0 +1,19 @@
+{
+    "social": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/elias94",
+      "icon": "svg/github.svg"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:eliascotto94@gmail.com?Subject=Hi",
+      "icon": "svg/mail.svg"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/eliascotto",
+      "icon": "svg/linkedin.svg"
+    }
+  ]
+}

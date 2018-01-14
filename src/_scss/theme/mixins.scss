@@ -1,0 +1,42 @@
+$breakpoints: (
+    'phone': 400px,
+    'phone-wide': 480px,
+    'phablet': 560px,
+    'tablet-small': 640px,
+    'tablet': 768px,
+    'tablet-wide': 1024px,
+    'desktop': 1248px,
+    'desktop-wide': 1440px,
+    'hd': 1920px
+);
+
+//
+// USAGE:
+// div {
+//     @include mediaQuery('tablet-wide', min) {
+//         font-size: 2.3rem;
+//     }
+// }
+//
+@mixin mediaQuery($width, $type: max) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+
+        @if $type == max {
+            $width: $width - 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

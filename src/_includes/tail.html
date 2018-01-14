@@ -1,0 +1,7 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+{% if jekyll.environment == 'production' %}
+    <script src="{{ "/js/main.min.js" | relative_url }}"></script>
+{% else %}
+    <script src="{{ "/js/main.js" | relative_url }}"></script>
+{% endif %}
