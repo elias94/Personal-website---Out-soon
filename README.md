@@ -11,3 +11,6 @@ Source code for the coming soon page.
 - [Babel](https://babeljs.io/)
 - [Anime](http://animejs.com/)
 
+### Usage
+- run `gulp` for browsersync + watch
+- run `gulp build` for production build
